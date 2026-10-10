@@ -7,6 +7,7 @@ import { Reveal } from "@/components/Reveal";
 import { SaveButton } from "@/components/SaveButton";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { StickyContactBar } from "@/components/StickyContactBar";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { getImovel, imoveis } from "@/data/imoveis";
 import { formatPreco, fotosDaGaleria, linkWhatsApp, plural } from "@/lib/imoveis";
@@ -86,13 +87,15 @@ export default async function ImovelPage({ params }: Props) {
           </Link>
         </nav>
 
-        <Gallery
+        <div id="galeria">
+          <Gallery
           nome={imovel.nome}
           capa={imovel.capa}
           destaqueMobile={imovel.destaqueMobile}
           grade={imovel.galeria}
           todas={fotosDaGaleria(imovel)}
-        />
+          />
+        </div>
 
         <div className="mt-8 grid gap-10 lg:grid-cols-[1fr_400px] lg:gap-[72px]">
           <div className="min-w-0">
@@ -129,6 +132,7 @@ export default async function ImovelPage({ params }: Props) {
           </div>
 
           <aside
+            id="contato"
             aria-label="Valor e contato"
             className="self-start rounded-lg border border-line bg-surface p-6 lg:sticky lg:top-6"
           >
@@ -158,7 +162,7 @@ export default async function ImovelPage({ params }: Props) {
           </aside>
         </div>
 
-        <section className="pt-[72px]" aria-labelledby="parecidos-title">
+        <section id="parecidos" className="pt-[72px]" aria-labelledby="parecidos-title">
           <Reveal className="mb-6">
             <p className="eyebrow">Na mesma linha</p>
             <h2 id="parecidos-title" className="d2 mt-2">
@@ -175,20 +179,11 @@ export default async function ImovelPage({ params }: Props) {
         </section>
       </main>
 
-      <div className="fixed bottom-[52px] left-3 right-3 z-40 flex gap-2 lg:hidden">
-        <a href={waInteresse} target="_blank" rel="noopener noreferrer" className="btn btn-pine flex-1 shadow-soft">
-          <WhatsAppIcon />
-          WhatsApp
-        </a>
-        <a
-          href={waVisita}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn flex-1 border-line-strong bg-surface text-ink shadow-soft"
-        >
-          Agendar visita
-        </a>
-      </div>
+      <StickyContactBar
+        waInteresse={waInteresse}
+        waVisita={waVisita}
+        hideWhenVisible={["galeria", "contato", "parecidos"]}
+      />
 
       <SiteFooter />
       <div aria-hidden className="h-16 lg:hidden" />

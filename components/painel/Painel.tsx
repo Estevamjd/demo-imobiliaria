@@ -151,7 +151,7 @@ export function Painel() {
     if (scrolls && p.scrollToCol) {
       const b = boardRef.current!;
       const col = colRefs.current.get(p.scrollToCol);
-      if (col) b.scrollTo({ left: col.offsetLeft - b.offsetLeft, behavior: reduced ? "auto" : "smooth" });
+      if (col) b.scrollTo({ left: col.offsetLeft - 16, behavior: reduced ? "auto" : "smooth" });
     }
     if (reduced) return;
 
@@ -231,7 +231,7 @@ export function Painel() {
         </p>
       </aside>
 
-      <main className="min-w-0 p-4 lg:px-7 lg:py-6">
+      <main className="min-w-0 py-4 pl-4 pr-5 lg:px-7 lg:py-6">
         <div className="mb-3.5 flex items-center justify-between lg:hidden">
           <Wordmark href="/" size={22} />
           <span
@@ -265,7 +265,7 @@ export function Painel() {
           </button>
         </div>
 
-        <div className="no-scrollbar -mx-4 my-4 flex gap-2 overflow-x-auto px-4 lg:mx-0 lg:px-0" role="group" aria-label="Filtrar por origem">
+        <div className="no-scrollbar -ml-4 my-4 flex gap-2 overflow-x-auto pl-4 lg:ml-0 lg:pl-0" role="group" aria-label="Filtrar por origem">
           {filtros.map((f) => (
             <button
               key={f.id}
@@ -286,7 +286,7 @@ export function Painel() {
         {vista === "pipeline" ? (
           <div
             ref={boardRef}
-            className="no-scrollbar relative -mx-4 grid snap-x snap-mandatory scroll-px-4 auto-cols-[82%] grid-flow-col gap-3 overflow-x-auto px-4 pb-2 lg:mx-0 lg:auto-cols-[minmax(0,1fr)] lg:overflow-visible lg:px-0"
+            className="no-scrollbar relative -ml-4 grid snap-x snap-mandatory scroll-pl-4 auto-cols-[82%] grid-flow-col gap-3 overflow-x-auto pb-2 pl-4 lg:ml-0 lg:auto-cols-[minmax(0,1fr)] lg:overflow-visible lg:pl-0"
           >
             {colunas.map((c) => {
               const daColuna = visiveis.filter((l) => c.estagios.includes(l.estagio));

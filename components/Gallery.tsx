@@ -20,9 +20,11 @@ export function Gallery({
 }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [atual, setAtual] = useState(0);
+  const [jaAbriu, setJaAbriu] = useState(false);
 
   const abrir = (key: FotoKey) => {
     setAtual(Math.max(0, todas.indexOf(key)));
+    setJaAbriu(true);
     dialogRef.current?.showModal();
   };
   const passo = useCallback(
@@ -105,6 +107,10 @@ export function Gallery({
             <p className="text-[13px] font-semibold tabular-nums text-graphite-muted" aria-live="polite">
               {atual + 1} / {todas.length}
             </p>
+            <p className="flex items-center gap-1.5 rounded-full border border-graphite-2 px-2.5 py-[6px] text-[9px] font-semibold uppercase leading-none tracking-[0.16em] text-graphite-muted">
+              <i aria-hidden className="h-[5px] w-[5px] rounded-full bg-pine-onDark" />
+              Demonstração
+            </p>
             <button
               type="button"
               onClick={() => dialogRef.current?.close()}
@@ -115,14 +121,21 @@ export function Gallery({
             </button>
           </div>
           <div className="relative flex-1">
-            <Image
-              key={todas[atual]}
-              src={fotos[todas[atual]].src}
-              alt={fotos[todas[atual]].alt}
-              fill
-              sizes="100vw"
-              className="rise object-contain"
-            />
+            {jaAbriu &&
+              todas.map((key, n) => (
+                <Image
+                  key={key}
+                  src={fotos[key].src}
+                  alt={n === atual ? fotos[key].alt : ""}
+                  aria-hidden={n !== atual}
+                  fill
+                  loading="eager"
+                  sizes="100vw"
+                  className={`object-contain transition-opacity duration-300 ease-calm ${
+                    n === atual ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
           </div>
           <div className="flex items-center justify-between gap-4 px-4 py-4 lg:px-8">
             <button
