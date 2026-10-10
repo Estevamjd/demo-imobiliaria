@@ -49,7 +49,7 @@ export default async function ImovelPage({ params }: Props) {
     ["Código", imovel.codigo],
     ["Ano", String(imovel.ano)],
     ["Condomínio", imovel.condominio ? `${brl(imovel.condominio)}/mês` : "Não há"],
-    ["IPTU (exemplo)", `${brl(imovel.iptu)}/ano`],
+    ["IPTU anual", `${brl(imovel.iptu)}/ano`],
     venda
       ? ["Aceita financiamento", imovel.financiamento ? "Sim" : "Não"]
       : ["Garantia", "Seguro fiança ou caução"],
@@ -104,7 +104,7 @@ export default async function ImovelPage({ params }: Props) {
                 {imovel.tipo} · {venda ? "Venda" : "Aluguel"}
               </span>
               <h1 className="d2 mt-3">{imovel.titulo}</h1>
-              <p className="mt-2 text-ink-muted">Rua Exemplo, 000 · Bairro {imovel.bairro} · Cidade Exemplo</p>
+              <p className="mt-2 text-ink-muted">Rua das Araucárias, 148 · Bairro {imovel.bairro} · Vila Serena</p>
             </div>
 
             <dl className="mt-7 grid grid-cols-2 border-t border-line md:grid-cols-4">

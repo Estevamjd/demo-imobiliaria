@@ -61,7 +61,7 @@ export const passosPorEstagio: Record<Estagio, { quando: string; texto: string; 
     { quando: "D+3", texto: "Ajustar condições, se precisar" },
   ],
   ganho: [
-    { quando: "Hoje", texto: "Proposta aceita (exemplo)", feito: true },
+    { quando: "Hoje", texto: "Proposta aceita", feito: true },
     { quando: "D+1", texto: "Enviar lista de documentos" },
     { quando: "D+3", texto: "Agendar a assinatura" },
   ],
@@ -116,7 +116,7 @@ export const leadsIniciais: Lead[] = [
     hoje: true,
     conversa: [
       { de: "lead", texto: "O Sobrado Tijolo aceita financiamento?", hora: "22:04" },
-      { de: "equipe", texto: "Aceita, sim. Posso te passar uma simulação de exemplo amanhã cedo?", hora: "22:05", auto: true },
+      { de: "equipe", texto: "Aceita, sim. Posso te passar uma simulação de crédito amanhã cedo?", hora: "22:05", auto: true },
     ],
   },
   {
@@ -210,7 +210,7 @@ export const leadsIniciais: Lead[] = [
     chegou: "qua",
     hoje: false,
     conversa: [
-      { de: "equipe", texto: "Tiago, o proprietário aceitou a proposta (exemplo).", hora: "16:48" },
+      { de: "equipe", texto: "Tiago, o proprietário aceitou a proposta.", hora: "16:48" },
       { de: "lead", texto: "Que ótimo! Quais documentos eu separo?", hora: "16:55" },
     ],
   },

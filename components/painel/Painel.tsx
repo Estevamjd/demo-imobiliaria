@@ -40,7 +40,7 @@ function rodape(l: Lead) {
     case "proposta":
       return { texto: "Aguardando", destaque: false };
     case "ganho":
-      return { texto: "exemplo", destaque: false };
+      return { texto: "aceito", destaque: false };
     case "perdido":
       return { texto: "sem retorno", destaque: false };
   }
@@ -134,7 +134,7 @@ export function Painel() {
             ...a,
             [l.id]: {
               de: "equipe",
-              texto: `Oi, ${l.nome.split(" ")[0]}! Aqui é o Corretor Exemplo, vou seguir com você por aqui.`,
+              texto: `Oi, ${l.nome.split(" ")[0]}! Aqui é o Rafael, corretor Calmeira, vou seguir com você por aqui.`,
               hora: "agora",
             },
           },
@@ -237,7 +237,7 @@ export function Painel() {
           <span
             className="grid h-11 w-11 place-items-center rounded-full bg-sand text-[11px] font-bold text-ink-2"
             role="img"
-            aria-label="Usuário de exemplo"
+            aria-label="Conta da demonstração"
           >
             EX
           </span>
@@ -247,7 +247,7 @@ export function Painel() {
           <div className="min-w-0">
             <h1 className="font-serif text-[30px] font-normal leading-none">{vista === "lista" ? "Leads" : "Pipeline"}</h1>
             <p className="mt-1 flex flex-wrap items-center gap-x-2 text-[13px] text-ink-muted">
-              <span>Leads de exemplo · semana atual</span>
+              <span>Dados fictícios · semana atual</span>
               <span className="rounded-full border border-line-strong px-2 py-0.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-ink-2">
                 Dados fictícios
               </span>
@@ -257,7 +257,7 @@ export function Painel() {
             type="button"
             onClick={novoLead}
             disabled={!leadsReserva[reserva]}
-            aria-label={leadsReserva[reserva] ? "Adicionar lead de exemplo" : "Sem mais leads de exemplo"}
+            aria-label={leadsReserva[reserva] ? "Adicionar lead fictício" : "Sem mais leads fictícios"}
             className="btn btn-pine min-h-[44px] flex-none gap-1.5 px-4 text-[14px] disabled:cursor-not-allowed disabled:bg-ink-muted"
           >
             <Plus aria-hidden strokeWidth={2} className="h-4 w-4" />
@@ -458,7 +458,7 @@ export function Painel() {
               <dt className="text-ink-muted">Entrou</dt>
               <dd className="font-semibold">{sel.entrou}</dd>
               <dt className="text-ink-muted">Responsável</dt>
-              <dd className="font-semibold">{assumidos[sel.id] ? "Corretor Exemplo (você)" : "Corretor Exemplo"}</dd>
+              <dd className="font-semibold">{assumidos[sel.id] ? "Rafael, corretor Calmeira (você)" : "Rafael, corretor Calmeira"}</dd>
             </dl>
             <div className="mt-2 flex flex-wrap gap-x-1.5" role="group" aria-label="Mudar estágio">
               {estagios.map((s) => {
@@ -486,7 +486,7 @@ export function Painel() {
 
           <div id="conversa" className="scroll-mt-6">
             <p className="mb-2.5 text-[11px] font-bold uppercase tracking-[0.12em] text-ink-muted">Histórico WhatsApp</p>
-            <ol className="grid gap-2 rounded-md bg-chat p-3" aria-label="Mensagens de exemplo">
+            <ol className="grid gap-2 rounded-md bg-chat p-3" aria-label="Mensagens fictícias">
               {conversa.map((m, n) => (
                 <li
                   key={`${sel.id}-${n}`}

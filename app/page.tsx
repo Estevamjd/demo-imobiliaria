@@ -32,7 +32,7 @@ export default function Home() {
         <section className="wrap pt-3 lg:pt-8" aria-labelledby="hero-title">
           <div className="grid gap-6 lg:grid-cols-[5fr_7fr] lg:items-end lg:gap-14">
             <div className="rise lg:pb-[120px]">
-              <p className="eyebrow">Imóveis selecionados · Cidade Exemplo</p>
+              <p className="eyebrow">Imóveis selecionados · Vila Serena</p>
               <h1 id="hero-title" className="d1 mt-3.5">
                 Casas com luz, madeira e <em className="italic text-pine">tempo</em> para morar.
               </h1>
