@@ -91,7 +91,7 @@ export const leadsIniciais: Lead[] = [
   },
   {
     id: "l02",
-    nome: "Rafael T.",
+    nome: "Diego T.",
     imovelId: "cal-0007",
     origem: "Site",
     origemDetalhe: "Site · formulário do imóvel",
@@ -101,7 +101,7 @@ export const leadsIniciais: Lead[] = [
     hoje: true,
     conversa: [
       { de: "lead", texto: "Vi o Apto Assoalho no site. O condomínio inclui água?", hora: "21:27" },
-      { de: "equipe", texto: "Oi, Rafael! Inclui água e gás. Quer que eu mande a planta?", hora: "21:28", auto: true },
+      { de: "equipe", texto: "Oi, Diego! Inclui água e gás. Quer que eu mande a planta?", hora: "21:28", auto: true },
     ],
   },
   {

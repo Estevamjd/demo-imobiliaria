@@ -134,7 +134,7 @@ export function Painel() {
             ...a,
             [l.id]: {
               de: "equipe",
-              texto: `Oi, ${l.nome.split(" ")[0]}! Aqui é o Rafael, corretor Calmeira, vou seguir com você por aqui.`,
+              texto: `Oi, ${l.nome.split(" ")[0]}! Aqui é o corretor da Calmeira, vou seguir com você por aqui.`,
               hora: "agora",
             },
           },
@@ -458,7 +458,7 @@ export function Painel() {
               <dt className="text-ink-muted">Entrou</dt>
               <dd className="font-semibold">{sel.entrou}</dd>
               <dt className="text-ink-muted">Responsável</dt>
-              <dd className="font-semibold">{assumidos[sel.id] ? "Rafael, corretor Calmeira (você)" : "Rafael, corretor Calmeira"}</dd>
+              <dd className="font-semibold">{assumidos[sel.id] ? "Corretor da Calmeira (você)" : "Corretor da Calmeira"}</dd>
             </dl>
             <div className="mt-2 flex flex-wrap gap-x-1.5" role="group" aria-label="Mudar estágio">
               {estagios.map((s) => {
