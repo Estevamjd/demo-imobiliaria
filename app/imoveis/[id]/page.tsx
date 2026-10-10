@@ -66,7 +66,7 @@ export default async function ImovelPage({ params }: Props) {
     <>
       <SiteHeader action={<SaveButton />} />
       <main className="wrap">
-        <nav aria-label="Você está em" className="flex flex-wrap items-center pb-[18px] pt-2 text-[13px] text-ink-muted">
+        <nav aria-label="Você está em" className="flex flex-wrap items-center pb-0.5 text-[13px] text-ink-muted">
           <Link href={`/imoveis?op=${imovel.operacao}`} className="inline-flex min-h-[44px] items-center hover:text-ink">
             {venda ? "Comprar" : "Alugar"}
           </Link>

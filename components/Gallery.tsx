@@ -79,7 +79,7 @@ export function Gallery({
               type="button"
               onClick={() => abrir(key)}
               className={tileCls}
-              aria-label={ultimo && restantes > 0 ? `Ver todas as ${todas.length} fotos` : `Ampliar foto: ${f.alt}`}
+              aria-label={ultimo && restantes > 0 ? `+${restantes} fotos: ver as ${todas.length} fotos` : `Ampliar foto: ${f.alt}`}
             >
               <Image src={f.src} alt="" fill sizes="(min-width: 1024px) 300px, 50vw" className={imgCls} />
               {ultimo && restantes > 0 && (

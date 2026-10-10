@@ -199,7 +199,7 @@ export function Painel() {
 
   return (
     <div className="grid min-h-screen bg-canvas lg:grid-cols-[232px_1fr]">
-      <aside className="hidden flex-col bg-graphite px-4 py-[22px] text-graphite-fg lg:flex">
+      <aside className="hidden flex-col bg-graphite px-4 py-[22px] text-graphite-fg lg:sticky lg:top-0 lg:flex lg:h-screen">
         <div className="px-2">
           <Wordmark href="/" size={22} onDark />
         </div>
@@ -445,7 +445,10 @@ export function Painel() {
               <dt className="text-ink-muted">Imóvel</dt>
               <dd className="font-semibold">
                 {imovelSel ? (
-                  <Link href={`/imoveis/${imovelSel.id}`} className="underline decoration-line-strong underline-offset-4 hover:decoration-pine">
+                  <Link
+                    href={`/imoveis/${imovelSel.id}`}
+                    className="-my-[13px] inline-flex min-h-[44px] items-center underline decoration-line-strong underline-offset-4 hover:decoration-pine"
+                  >
                     {imovelLabel(sel.imovelId)}
                   </Link>
                 ) : (
@@ -470,7 +473,7 @@ export function Painel() {
                   >
                     <span
                       className={`chip st-${s.id} border border-transparent ${
-                        cur ? "outline outline-2 outline-offset-1 outline-pine" : "opacity-80 group-hover/st:opacity-100"
+                        cur ? "outline outline-2 outline-offset-1 outline-pine" : "group-hover/st:border-line-strong"
                       }`}
                     >
                       {s.label}

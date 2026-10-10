@@ -46,7 +46,7 @@ export default async function ImoveisPage({
         }
       />
       <main className="wrap">
-        <nav aria-label="Você está em" className="pb-[18px] pt-2 text-[13px] text-ink-muted">
+        <nav aria-label="Você está em" className="pb-0.5 text-[13px] text-ink-muted">
           <Link href="/" className="inline-flex min-h-[44px] items-center hover:text-ink">
             Início
           </Link>
@@ -64,6 +64,7 @@ export default async function ImoveisPage({
 
         <SearchForm key={filtrosParaQuery(filtros)} initial={filtros} className="mt-6" />
 
+        <h2 className="sr-only">Imóveis encontrados</h2>
         {resultados.length > 0 ? (
           <div className="mt-10 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
             {resultados.map((i, n) => (
