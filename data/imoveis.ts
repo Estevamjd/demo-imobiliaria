@@ -142,7 +142,7 @@ export const imoveis: Imovel[] = [
     orientacao: "Norte",
     lancamento: false,
     descricao:
-      "Casa com varanda sob pérgola de madeira, lareira externa e cozinha gourmet de frente para o gramado. A sala abre por inteiro para a área externa. A suíte principal abre para a varanda coberta.",
+      "Casa com deck de madeira sob pérgola, espaço para refeições ao ar livre e jardim em volta. A sala abre por inteiro para a área externa. A suíte principal abre para a varanda coberta.",
     capa: "pergola",
     capaPos: "center 70%",
     galeria: ["sala-verde", "cozinha", "quarto", "sala-quente"],
@@ -167,7 +167,7 @@ export const imoveis: Imovel[] = [
     orientacao: "Oeste",
     lancamento: false,
     descricao:
-      "Planta aberta com cozinha em bancada de madeira voltada para a sala. Armários brancos, boa ventilação cruzada e varanda pequena. Fica a poucos quarteirões do comércio do Alto das Araucárias.",
+      "Planta aberta com cozinha em marcenaria de madeira e mesa de jantar integrada. Boa luz natural, boa ventilação cruzada e varanda pequena. Fica a poucos quarteirões do comércio do Alto das Araucárias.",
     capa: "cozinha",
     galeria: ["sala-madeira", "quarto", "sala-quente", "quarto-claro"],
   },
@@ -394,7 +394,7 @@ export const imoveis: Imovel[] = [
     orientacao: "Norte",
     lancamento: false,
     descricao:
-      "Casa para alugar com varanda sob pérgola, lareira externa e gramado. Aceita pet. A área externa tem ponto de água e tomada.",
+      "Casa para alugar com deck sob pérgola, mesa ao ar livre e jardim. Aceita pet. A área externa tem ponto de água e tomada.",
     capa: "pergola",
     capaPos: "center 80%",
     galeria: ["sala-verde", "quarto", "cozinha", "sala-quente"],
