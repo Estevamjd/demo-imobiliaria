@@ -4,9 +4,9 @@ Conferido em 2026-10-10. Nada pago. Arquivos locais em `design/mockups/img/` (ba
 ## Fotos
 | Arquivo | Uso | Página | URL direta | Fotógrafo | Licença |
 |---|---|---|---|---|---|
-| pergola.jpg | hero home | https://unsplash.com/photos/modern-patio-with-pergola-fireplace-and-outdoor-kitchen-93TYtgVkGOo | https://images.unsplash.com/photo-1755816764831-2803235f0099 | autor da conta pede crédito a rosewooddecks.com (nome do perfil não confirmado) | Unsplash License https://unsplash.com/license ("Free to use", lido na página via busca) |
-| cozinha.jpg | galeria | https://unsplash.com/photos/bright-minimalist-kitchen-with-white-cabinets-and-wooden-countertops-avPVKD07Fcg | https://images.unsplash.com/photo-1769745241584-be9b8227e126 | **a confirmar** | Unsplash License (free) |
-| sala-verde.jpg | galeria | https://unsplash.com/photos/cozy-living-room-with-natural-elements-and-warm-tones-8fF_tF2ZMSQ | https://images.unsplash.com/photo-1749472034620-8964f6f7463b | Simona Sergi (@i_am_simoesse) | Unsplash License (free) |
+| pergola.jpg | hero home | https://www.pexels.com/photo/terrace-in-house-7587879/ | https://images.pexels.com/photos/7587879/pexels-photo-7587879.jpeg | Max Vakhtbovych | Pexels License https://www.pexels.com/license/ (página mostra "License: Free", conferida em 12/10/2026) |
+| cozinha.jpg | galeria | https://www.pexels.com/photo/modern-wooden-furniture-and-appliances-in-spacious-kitchen-6933769/ | https://images.pexels.com/photos/6933769/pexels-photo-6933769.jpeg | Max Vakhtbovych | Pexels License https://www.pexels.com/license/ (página mostra "License: Free", conferida em 12/10/2026) |
+| sala-verde.jpg | galeria | https://www.pexels.com/photo/modern-minimalist-open-plan-living-room-interior-32956273/ | https://images.pexels.com/photos/32956273/pexels-photo-32956273.jpeg | Allen Boguslavsky | Pexels License https://www.pexels.com/license/ (página mostra "License: Free", conferida em 12/10/2026) |
 | casa-madeira.jpg | card + galeria desktop | https://www.pexels.com/photo/modern-house-with-glass-and-wood-exterior-29887340/ | https://images.pexels.com/photos/29887340/pexels-photo-29887340.jpeg | Alexander Mass (conferido pelo Chief, 2026-10-10) | Pexels License https://www.pexels.com/license/ |
 | sala-quente.jpg | galeria + faixa CTA | https://www.pexels.com/photo/square-39-14781780/ | https://images.pexels.com/photos/14781780/pexels-photo-14781780.jpeg | Yusuf P (conferido pelo Chief, 2026-10-10) | Pexels License |
 | quarto.jpg | galeria | https://www.pexels.com/photo/cozy-modern-bedroom-with-neutral-decor-33197278/ | https://images.pexels.com/photos/33197278/pexels-photo-33197278.jpeg | Louie Alma (conferido pelo Chief, 2026-10-10) | Pexels License |
@@ -39,7 +39,7 @@ Pexels: todas abriram com licença "Free" (Pexels License).
 - 37108693 · "Sergej *****" (o próprio site censura o sobrenome)
 - 1571460 (reel v2) · Viaceslav Kat
 
-Unsplash (7 fotos, nesta demo e no reel v2): não verificadas. O site exige uma verificação anti-bot de prova de trabalho que não passou. Os arquivos vêm de `images.unsplash.com`, e não de `plus.unsplash.com` (onde fica o Unsplash+ pago), o que indica a licença gratuita, **sem confirmar**. Nome do fotógrafo: a confirmar. Antes do merge ou de publicar, alguém precisa abrir as páginas num navegador normal.
+**12/10/2026: as 3 fotos Unsplash desta demo (pergola, cozinha, sala-verde) foram trocadas por Pexels verificadas: 7587879 e 6933769 (Max Vakhtbovych) e 32956273 (Allen Boguslavsky), todas com "License: Free". Esta demo não usa mais Unsplash.** Histórico: Unsplash (7 fotos, nesta demo e no reel v2): não verificadas. O site exige uma verificação anti-bot de prova de trabalho que não passou. Os arquivos vêm de `images.unsplash.com`, e não de `plus.unsplash.com` (onde fica o Unsplash+ pago), o que indica a licença gratuita, **sem confirmar**. Nome do fotógrafo: a confirmar. Antes do merge ou de publicar, alguém precisa abrir as páginas num navegador normal.
 
 ## Neste repositório
 - Fotos: os mesmos 9 arquivos acima, sem edição, em `public/fotos/` (servidos via `next/image`).

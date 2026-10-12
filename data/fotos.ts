@@ -28,7 +28,7 @@ export const fotos: Record<FotoKey, Foto> = {
     src: "/fotos/cozinha.jpg",
     width: 1800,
     height: 1200,
-    alt: "Cozinha clara com armários brancos e bancada de madeira",
+    alt: "Cozinha ampla com marcenaria em madeira e mesa de jantar",
   },
   "fachada-tijolo": {
     src: "/fotos/fachada-tijolo.jpg",
@@ -39,8 +39,8 @@ export const fotos: Record<FotoKey, Foto> = {
   pergola: {
     src: "/fotos/pergola.jpg",
     width: 1800,
-    height: 1202,
-    alt: "Varanda com pérgola, lareira externa e jardim ao fundo",
+    height: 1200,
+    alt: "Deck de madeira com pérgola e mesa de jantar ao ar livre, cercado de verde",
   },
   "quarto-claro": {
     src: "/fotos/quarto-claro.jpg",
@@ -70,7 +70,7 @@ export const fotos: Record<FotoKey, Foto> = {
     src: "/fotos/sala-verde.jpg",
     width: 1800,
     height: 1200,
-    alt: "Sala aconchegante com plantas, madeira e tons quentes",
+    alt: "Sala integrada com cozinha, plantas e detalhes em madeira",
   },
 };
 
