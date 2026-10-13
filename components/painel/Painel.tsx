@@ -534,7 +534,7 @@ export function Painel() {
         </section>
 
         <footer className="mt-8 flex flex-wrap items-center justify-between gap-x-6 border-t border-line pb-14 pt-5 text-[13px] text-ink-muted">
-          <span>Demo AstroG · marca e dados fictícios</span>
+          <span>Projeto conceito · marca e dados fictícios</span>
           <Link href="/" className="inline-flex min-h-[44px] items-center underline-offset-4 hover:text-ink hover:underline">
             Voltar ao site
           </Link>
