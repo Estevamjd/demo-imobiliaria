@@ -13,7 +13,7 @@ export function SiteFooter({ className = "" }: { className?: string }) {
           <Link href="/creditos" className="inline-flex min-h-[44px] items-center underline-offset-4 hover:text-ink hover:underline">
             Créditos
           </Link>
-          <span>Demo AstroG · marca e dados fictícios</span>
+          <span>Projeto conceito · marca e dados fictícios</span>
         </div>
       </div>
     </footer>
