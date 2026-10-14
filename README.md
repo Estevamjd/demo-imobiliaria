@@ -1,6 +1,24 @@
-# demo-imobiliaria
+# Calmeira Imóveis — site + painel de leads (projeto conceito)
 
-Demo de site para a imobiliária **fictícia** Calmeira Imóveis. Marca, imóveis, valores e leads são dados fictícios. Nenhum backend, banco, API ou `.env`.
+🔗 **Demo ao vivo:** https://demo-imobiliaria-delta.vercel.app
+
+Projeto conceito de site para uma imobiliária **fictícia**. Marca, imóveis, valores e leads são dados fictícios. Nenhum backend, banco, API ou `.env`.
+
+![Home da Calmeira](docs/screenshots/desktop-hero.png)
+
+## O problema
+
+Muitas imobiliárias pequenas dependem de portais e do WhatsApp solto: o cliente não acha os imóveis com facilidade e os contatos se perdem sem acompanhamento. A ideia aqui é mostrar um site com busca filtrável e botão de WhatsApp em cada imóvel, mais um painel simples para acompanhar cada lead até a proposta.
+
+## Telas
+
+| Imóvel | Painel de leads | Mobile |
+|---|---|---|
+| ![Imóvel](docs/screenshots/desktop-imovel.png) | ![Painel](docs/screenshots/desktop-painel.png) | ![Mobile](docs/screenshots/mobile-hero.png) |
+
+## Stack
+
+Next.js (App Router) · TypeScript · Tailwind CSS (design tokens próprios) · deploy na Vercel. Dados mockados em `data/*.ts`.
 
 ## Rodar
 
@@ -31,3 +49,8 @@ Checagem de cor proibida (deve dar vazio):
 ```bash
 rg "(blue|sky|indigo|cyan|emerald)-[0-9]|#25d366" -i app components data tailwind.config.ts
 ```
+
+
+## Autor
+
+Feito por **Estevam Juliano** — [LinkedIn](https://www.linkedin.com/in/estevam-juliano-8799b026b/) · [GitHub](https://github.com/Estevamjd)
